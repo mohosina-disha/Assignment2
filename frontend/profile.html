@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profile</h1>
+        <form id="profileForm">
+            <input type="text" id="firstName" placeholder="First Name" disabled>
+            <input type="text" id="lastName" placeholder="Last Name" disabled>
+            <select id="gender" disabled>
+                <option value="" disabled>Gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <input type="date" id="dateOfBirth" disabled>
+            <input type="email" id="email" placeholder="Email" disabled>
+            <input type="file" id="profileImage" accept="image/*" disabled>
+            <button type="button" id="editButton">Edit</button>
+            <button type="submit" id="updateButton" style="display: none;">Update</button>
+        </form>
+        <button id="deleteButton">Delete Account</button>
+        <button id="logoutButton">Logout</button>
+    </div>
+    <script src="js/profile.js"></script>
+</body>
+</html>
